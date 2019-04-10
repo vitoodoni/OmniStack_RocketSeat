@@ -35,7 +35,7 @@ app.use(express.json());
 //Permite que o aplicativo retorne e receba arquivos
 app.use(express.urlencoded({ extended: true}));
 
-app.use('/files', express.static(path.resolve(__dirname, '..', 'tmp')));
+app.use("/files", express.static(path.resolve(__dirname, '..', 'tmp')));
 
 app.use(require('./routes'));
 
